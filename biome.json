@@ -1,0 +1,87 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!**/node_modules/**/*",
+      "!**/dist/**/*",
+      "!**/build/**/*",
+      "!**/.codex/**/*",
+      "!**/.github/**/*",
+      "!**/.vscode/**/*",
+      "!**/.next/**/*",
+      "!**/.nx/**/*"
+    ]
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "defaultBranch": "master",
+    "useIgnoreFile": true
+  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "includes": ["**"],
+    "attributePosition": "auto",
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 320
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "noForEach": "off",
+        "noUselessLoneBlockStatements": "off",
+        "noArguments": "off",
+        "useArrowFunction": "off",
+        "useRegexLiterals": "off",
+        "noBannedTypes": "off",
+        "useLiteralKeys": "off"
+      },
+      "correctness": {
+        "noEmptyPattern": "off",
+        "noSwitchDeclarations": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noImplicitAnyLet": "off",
+        "noShadowRestrictedNames": "off",
+        "noAssignInExpressions": "off",
+        "noConfusingVoidType": "off",
+        "noArrayIndexKey": "off",
+        "noRedeclare": "off",
+        "useIterableCallbackReturn": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "noUnusedTemplateLiteral": "off",
+        "useDefaultParameterLast": "off",
+        "noParameterAssign": "off",
+        "noUselessElse": "off",
+        "useImportType": "off",
+        "useTemplate": "off",
+        "useAsConstAssertion": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      },
+      "performance": {
+        "noDelete": "off",
+        "noAccumulatingSpread": "off"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@devjskit/biome-config",
+  "version": "0.2.2",
+  "description": "BiomeJS configuration",
+  "homepage": "https://devjskit.github.io/biome-config",
+  "bugs": "https://github.com/devjskit/biome-config/issues",
+  "license": "MIT",
+  "author": "Billgo <hi@billgo.me>",
+  "keywords": [
+    "biome",
+    "biomejs",
+    "config",
+    "configuration"
+  ],
+  "type": "module",
+  "main": "biome.json",
+  "files": [
+    "biome.json"
+  ],
+  "exports": {
+    ".": "./biome.json"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.13"
+  },
+  "peerDependencies": {
+    "@biomejs/biome": "*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
