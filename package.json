@@ -6,12 +6,15 @@
   "bugs": "https://github.com/devjskit/biome-config/issues",
   "license": "MIT",
   "author": "Billgo <hi@billgo.me>",
- 	"keywords": ["biome", "biomejs", "config", "configuration"],
+  "keywords": ["biome", "biomejs", "config", "configuration"],
   "main": "biome.json",
   "files": ["biome.json"],
   "exports": {
-		".": "./biome.json"
-	},
+    ".": "./biome.json"
+  },
+  "devDependencies": {    
+    "@biomejs/biome": "^1.8.3"
+  },
   "peerDependencies": {
     "@biomejs/biome": "*"
   },

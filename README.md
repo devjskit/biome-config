@@ -5,7 +5,7 @@
 **Install**:
 
 ```bash
-$ yarn add --dev @biomejs/biome @devjskit/biome-config
+  yarn add --dev @biomejs/biome @devjskit/biome-config
 ```
 
 **Edit `package.json`**:
@@ -13,8 +13,8 @@ $ yarn add --dev @biomejs/biome @devjskit/biome-config
 ```jsonc
 // <project-root>/biome.json
 {
-    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-    "extends": "@devjskit/biome-config",
-    // ...
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": "@devjskit/biome-config",
+  // ...
 }
 ```
