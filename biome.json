@@ -26,7 +26,16 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "complexity": {
+				"noForEach": "off"
+			},
+      "suspicious":{
+        "noExplicitAny": "off"
+      },
+      "style":{
+        "noNonNullAssertion": "off"
+      }
     }
   }
 }
