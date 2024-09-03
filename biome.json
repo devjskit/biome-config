@@ -36,6 +36,7 @@
       },
       "style":{
         "noNonNullAssertion": "off",
+        "noUnusedTemplateLiteral": "off",
         "useImportType": "off" 
       },
       "a11y":{
