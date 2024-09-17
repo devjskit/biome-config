@@ -26,7 +26,7 @@
     "indentStyle": "space",
     "indentWidth": 2,
     "lineEnding": "lf",
-    "lineWidth": 80
+    "lineWidth": 160
   },
   "linter": {
     "enabled": true,
@@ -36,8 +36,12 @@
         "noForEach": "off",
         "useArrowFunction": "off"
       },
+      "correctness": {
+        "noEmptyPattern": "off"
+      },
       "suspicious": {
-        "noExplicitAny": "off"
+        "noExplicitAny": "off",
+        "noArrayIndexKey": "off"
       },
       "security": {
         "noDangerouslySetInnerHtml": "off"
