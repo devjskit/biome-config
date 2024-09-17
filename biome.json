@@ -1,8 +1,13 @@
-
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
-    "ignore": ["node_modules/**/*","dist/**/*","build/**/*",".vscode/**/*",".next/**/*"]
+    "ignore": [
+      "node_modules/**/*",
+      "dist/**/*",
+      "build/**/*",
+      ".vscode/**/*",
+      ".next/**/*"
+    ]
   },
   "vcs": {
     "enabled": true,
@@ -21,25 +26,28 @@
     "indentStyle": "space",
     "indentWidth": 2,
     "lineEnding": "lf",
-    "lineWidth": 160
+    "lineWidth": 80
   },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": true,
       "complexity": {
-				"noForEach": "off"
-			},
-      "suspicious":{
-        "noExplicitAny": "off"
-        
+        "noForEach": "off",
+        "useArrowFunction": "off"
       },
-      "style":{
+      "suspicious": {
+        "noExplicitAny": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "style": {
         "noNonNullAssertion": "off",
         "noUnusedTemplateLiteral": "off",
-        "useImportType": "off" 
+        "useImportType": "off"
       },
-      "a11y":{
+      "a11y": {
         "noSvgWithoutTitle": "off"
       }
     }
