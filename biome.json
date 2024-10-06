@@ -35,14 +35,19 @@
       "complexity": {
         "noForEach": "off",
         "useArrowFunction": "off",
-        "noBannedTypes": "off"
+        "useRegexLiterals": "off",
+        "noBannedTypes": "off",
+        "useLiteralKeys": "off"
       },
       "correctness": {
-        "noEmptyPattern": "off"
+        "noEmptyPattern": "off",
+        "noSwitchDeclarations": "off"
       },
       "suspicious": {
         "noExplicitAny": "off",
         "noImplicitAnyLet": "off",
+        "noShadowRestrictedNames": "off",
+        "noAssignInExpressions": "off",
         "noArrayIndexKey": "off"
       },
       "security": {
@@ -51,6 +56,7 @@
       "style": {
         "noNonNullAssertion": "off",
         "noUnusedTemplateLiteral": "off",
+        "useDefaultParameterLast": "off",
         "noParameterAssign": "off",
         "noUselessElse": "off",
         "useImportType": "off",
@@ -58,6 +64,9 @@
       },
       "a11y": {
         "noSvgWithoutTitle": "off"
+      },
+      "performance":{
+        "noDelete": "off"
       }
     }
   }
