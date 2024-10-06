@@ -34,13 +34,15 @@
       "recommended": true,
       "complexity": {
         "noForEach": "off",
-        "useArrowFunction": "off"
+        "useArrowFunction": "off",
+        "noBannedTypes": "off"
       },
       "correctness": {
         "noEmptyPattern": "off"
       },
       "suspicious": {
         "noExplicitAny": "off",
+        "noImplicitAnyLet": "off",
         "noArrayIndexKey": "off"
       },
       "security": {
@@ -49,7 +51,9 @@
       "style": {
         "noNonNullAssertion": "off",
         "noUnusedTemplateLiteral": "off",
-        "useImportType": "off"
+        "noUselessElse": "off",
+        "useImportType": "off",
+        "useTemplate": "off"
       },
       "a11y": {
         "noSvgWithoutTitle": "off"
