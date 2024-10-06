@@ -1,6 +1,6 @@
 {
   "name": "@devjskit/biome-config",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "BiomeJS configuration",
   "homepage": "https://devjskit.github.io/biome-config",
   "bugs": "https://github.com/devjskit/biome-config/issues",

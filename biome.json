@@ -48,7 +48,9 @@
         "noImplicitAnyLet": "off",
         "noShadowRestrictedNames": "off",
         "noAssignInExpressions": "off",
-        "noArrayIndexKey": "off"
+        "noConfusingVoidType": "off",
+        "noArrayIndexKey": "off",
+        "noRedeclare": "off"
       },
       "security": {
         "noDangerouslySetInnerHtml": "off"
