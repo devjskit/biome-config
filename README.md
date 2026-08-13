@@ -6,7 +6,8 @@ and Git-aware file handling while remaining customizable at the project level.
 
 [npm package][npm] · [Source code][source] · [Issue tracker][issues]
 
-> Compatibility: the current preset is validated against `@biomejs/biome@2.4.15`.
+> Compatibility: requires `@biomejs/biome >=2.3.0 <3.0.0`; tested with
+> `2.3.0`, `2.4.15`, and `2.5.8`.
 
 ## Installation
 
@@ -69,11 +70,14 @@ npx biome ci .
 - **Formatting:** Uses 2-space indentation, LF line endings, and a line width
   of 320 characters.
 - **Imports:** Organizes imports through Biome Assist.
+- **Tailwind CSS:** Parses Tailwind CSS 4 directives and functions in `*.css`
+  files.
 - **Git:** Enables Git integration, respects ignore files, and uses `master` as
   the default branch.
 - **Exclusions:** Ignores `node_modules`, `dist`, `build`, `.codex`, `.github`,
   `.vscode`, `.next`, and `.nx` directories.
-- **Astro:** Disables `noUnusedVariables` for `*.astro` files.
+- **Astro:** Disables `noUnusedVariables` and `noUnusedImports` for `*.astro`
+  files to avoid false positives from template references.
 
 The preset also enforces the following consistency rules as errors:
 
@@ -114,7 +118,7 @@ explicit `any` types as errors:
 Validate the configuration and inspect the package contents before publishing:
 
 ```sh
-npx biome check --formatter-enabled=false biome.json
+npm run check
 npm pack --dry-run
 ```
 

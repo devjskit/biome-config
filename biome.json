@@ -1,17 +1,7 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
-    "includes": [
-      "**",
-      "!**/node_modules/**/*",
-      "!**/dist/**/*",
-      "!**/build/**/*",
-      "!**/.codex/**/*",
-      "!**/.github/**/*",
-      "!**/.vscode/**/*",
-      "!**/.next/**/*",
-      "!**/.nx/**/*"
-    ]
+    "includes": ["**", "!**/node_modules/**/*", "!**/dist/**/*", "!**/build/**/*", "!**/.codex/**/*", "!**/.github/**/*", "!**/.vscode/**/*", "!**/.next/**/*", "!**/.nx/**/*"]
   },
   "vcs": {
     "enabled": true,
@@ -33,7 +23,6 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
       "complexity": {
         "noForEach": "off",
         "noUselessLoneBlockStatements": "off",
@@ -86,11 +75,20 @@
   },
   "overrides": [
     {
+      "includes": ["**/*.css"],
+      "css": {
+        "parser": {
+          "tailwindDirectives": true
+        }
+      }
+    },
+    {
       "includes": ["**/*.astro"],
       "linter": {
         "rules": {
           "correctness": {
-            "noUnusedVariables": "off"
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off"
           }
         }
       }

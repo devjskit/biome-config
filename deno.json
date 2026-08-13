@@ -1,5 +1,8 @@
 {
-	"name": "@devjskit/biome-config",
-	"version": "0.2.2",
-	"exports": "./biome.json"
+  "name": "@devjskit/biome-config",
+  "version": "0.3.1",
+  "exports": "./biome.json",
+  "publish": {
+    "include": ["LICENSE", "README.md", "biome.json"]
+  }
 }
